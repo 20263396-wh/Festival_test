@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>세계축제백과 메인페이지</title>
+<style>
+body {
+	margin : 0;
+	background-color : #F6F6F6;
+	}
+section { 
+	    width: 100%; 
+	    float: left; 
+	  } 
+footer { 
+	   width: 100%; 
+	   height : 30%; 
+	  clear: both; 
+	  margin-left: 20px;
+          font-size:18px;
+	  }
+header {
+	display: flex; 
+	align-items: center;
+	width: 100%;
+	height : 100%; 
+	padding: 10px 20px;
+	box-sizing: border-box;
+	background-color : #FFFFFF;
+	
+	} 
+.logo{
+	flex: 1;
+	}
+.search {
+	display: flex;
+	justify-center;
+	}
+.nav-links {
+	      flex:1;
+	      display: flex;
+	      justify-content: flex-end;
+	     gap: 20px;
+	     }
+.nav-links a{
+		text-decoration: none;
+		font-weight: bold;
+		}
+.festival_BINFF{
+		   text-align: center;
+		}
+.festival_BINFF img {
+			margin-left: auto;
+			margin-right: auto;
+			width:700px; 
+			height : 500px;
+			}
+.Aisa {
+	display: flex; 
+	align-items:center;
+	width: 100%; 
+	padding: 10px 20px;
+	}
+.Aisa img {
+	      width:350px; 
+	      height : 250px;
+	      margin-left: 80px;
+	     }
+.Aisa h4 {
+	    font-size:18px;
+	    margin-left : 30px;
+	    margin-top: -3px;
+	   }
+.Aisa_Japan{
+		flex : 1;
+		text-align : center;
+	      }
+.Aisa_China {
+		flex : 1;
+		margin-left : 100px;
+		}
+.Europe {
+	    display: flex; 
+	    align-items:center;
+	    width: 100%; 
+	    padding: 10px 20px;
+	   }
+.Europe img {
+		width:350px; 
+		height : 250px;
+		margin-left: 30px
+		}
+.Europe h4 {
+	    font-size:18px;
+	    margin-left : 30px;
+	    margin-top: -3px;
+	   }
+.Europe_Italy{
+		flex : 1;
+		text-align : center;
+		}
+.Europe_Spain{
+		flex : 1;
+		text-align : center;
+		}
+.Europe_France{
+		flex : 1;
+		text-align : center;
+		}
+ </style>
+</head>
+<body>
+<header>
+	<div class = "logo">
+	<a href="index.html"> <img src="./JPG/logo1.jpg" height = "50"></a>
+	</div>
+	<div class="search">
+	<form action=" /search" method="get" class="search-from">
+	<input style= "width: 320px; height:30px;  border: 2px solid black;" id="search" type="text" name="festival" placeholder="축제를 입력하세요">		
+	</form>
+	</div>
+	<div class="nav-links">
+	<a href="Festival_List.html" style ="color:black; font-size : 20px;">축제 목록</a> 
+	<a href="Festival_month.html" style ="color:black; font-size : 20px;">축제월별달력</a>
+	</div>
+</header>
+<hr style="margin-top : -1px; border:1px solid;">
+<section>	
+<div class="festival_BINFF">
+<a href="BINFF.html"><img src ="./JPG/BINFFP.jpg"></img></a>
+<h4 style="font-size : 20px; margin-top : -5px;">대한민국|부산 불꽃 축제|부산광역시 광안리|</h4>
+</div>
+<hr>
+<p style="font-size : 30px; margin-left: 100px">아시아</p>
+<div class="Aisa">
+	<div class="Aisa_Japan">
+	<a href="JSSF.html"><img src="./JPG/SAPPORO_snow.jpg"></img></a>
+	<h4>일본|삿포로 눈 축제|삿포로|</h4>
+	</div>
+	<div class="Aisa_China">
+	<a href="CQIBF.html"><img src="./JPG/QIBF.jpg"></img></a>
+	<h4 style="margin-left : 120px;">중국|칭다오 맥주 축제|중국 칭다오시|</h4>
+	</div>
+</div>
+<hr>
+<p style="font-size : 30px; margin-left: 100px">유럽</p>
+<div class="Europe">
+	<div class="Europe_Italy">
+	<a href="AdVF.html"><img src="./JPG/Verona Opera.jpg"></img></a>
+	<h4>이탈리아|베로나 오페라 페스티벌|베로나|</h4>
+	</div>
+	<div class="Europe_Spain">
+	<a href="LaTomatina.html"><img src="./JPG/cartel_rec.jpg"></img></a>
+	<h4>스페인|토마토(토마티나)축제|발렌시아 부뉼|</h4>
+	</div>
+	<div class="Europe_France">
+	<a href="MLF.html"><img src="./JPG/MLF.jpg"></img></a>
+	<h4>프랑스|망통 레몬 축제|망통|</h4>
+	</div>
+</div>
+</section>
+<hr>
+<footer>
+<a style= "color:blue" href="My.html">내 소개</a>
+</body>
+</html> 
+
+
+<!--참고 사이트-->
+<!--https://pjh3749.tistory.com/144-->
+<!--https://codingeverybody.kr/html-button-%ed%83%9c%ea%b7%b8/-->
+<!--https://codingeverybody.kr/css-display-flex/-->
+<!--https://codingeverybody.kr/css%eb%a1%9c-%ec%9a%94%ec%86%8c-%ea%b0%80%ec%9a%b4%eb%8d%b0-%ec%a0%95%eb%a0%ac%ed%95%98%ea%b8%b0/-->
+<!--https://codingeverybody.kr/css%eb%a1%9c-%ec%9d%b4%eb%af%b8%ec%a7%80-%ea%b0%80%ec%9a%b4%eb%8d%b0-%ec%a0%95%eb%a0%ac%ed%95%98%ea%b8%b0/-->
+<!--https://www.w3schools.com/css/css_margin.asp-->
